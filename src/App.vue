@@ -8,10 +8,21 @@
         <router-link to="/zip-code" class="bg-blue-700 rounded-full py-2 px-6">
           Consulte seu CEP
         </router-link>
+
+        <router-link to="/zip-code" class="bg-blue-700 rounded-full py-2 px-6">
+          Calculo de Frete
+        </router-link>
+
+        <router-link to="/map" class="bg-blue-700 rounded-full py-2 px-6">
+          Mapa
+        </router-link>
+
       </nav>
     </header>
     <main>
-      <router-view />
+    
+        <router-view />
+   
     </main>
   </div>
 </template>

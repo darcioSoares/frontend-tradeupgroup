@@ -2,8 +2,8 @@ import { createRouter, createWebHistory } from "vue-router";
 
 import LandPage from "../pages/LandPage.vue";
 import ConsultZipCode from "../pages/ConsultZipCode.vue";
+import Map from "../pages/Map.vue" 
 
-// Definindo as rotas
 const routes = [
   {
     path: "/",
@@ -14,6 +14,11 @@ const routes = [
     path: "/zip-code",
     name: "ConsultZipCode",
     component: ConsultZipCode,
+  },
+  {
+    path: "/map",
+    name: "Map",
+    component: Map,
   },
 
 ];
