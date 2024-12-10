@@ -12,7 +12,8 @@
           <input
             id="origem"
             v-model="cepOrigem"
-            type="text"
+            type="text"      
+            v-mask="'#####-###'"
             placeholder="Digite o CEP de origem"
             class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 text-sm"
             required
@@ -53,6 +54,14 @@ export default {
   },
   methods: {
   async buscarEndereco() {
+
+    const cepValido = /^\d{5}-\d{3}$/.test(this.cepOrigem);
+
+    if (!cepValido) {
+      alert("Por favor, insira um CEP válido no formato 12345-678.");
+      return;
+    }
+
     try {
       const response = await axios.get(
         `https://viacep.com.br/ws/${this.cepOrigem}/json/`
