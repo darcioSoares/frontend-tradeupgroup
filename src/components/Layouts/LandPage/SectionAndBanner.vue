@@ -11,10 +11,9 @@
  </div>
     <!-- Texto Explicativo -->
     <div class="w-full md:w-1/2 flex flex-col justify-center items-start space-y-4">
-      <h2 class="text-3xl font-bold">Texto Explicativo</h2>
+      <h2 class="text-3xl font-bold">Calcule os valores de seus pedidos</h2>
       <p class="text-lg leading-relaxed">
-        Esta é uma breve descrição da imagem ao lado. A seção é responsiva e adapta-se a qualquer
-        tamanho de tela. Em telas menores, o layout muda para uma coluna.
+        Calcule o valor dos seus pedidos e nunca mais seja pego de surpresa.
       </p>
       <button class="px-6 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700">
         Saiba Mais

@@ -18,9 +18,9 @@
     
     <!-- Texto Sobreposto -->
     <div class="relative text-center text-white p-4 max-w-2xl">
-      <h2 class="text-4xl font-bold mb-4">Banner Importante</h2>
+      <h2 class="text-4xl font-bold mb-4">Nunca mais fique Perdido</h2>
       <p class="text-lg">
-        Este é um banner com uma imagem de fundo. Adicione aqui uma mensagem importante ou uma chamada para ação.
+        Obtenha a sua localização em nosso site!
       </p>
 
     </div>
