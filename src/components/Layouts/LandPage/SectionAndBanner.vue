@@ -1,5 +1,5 @@
 <template>
-    <section class="min-h-screen bg-gray-50 flex flex-col md:flex-row items-center justify-center p-8 gap-8">
+    <section class="min-h-screen bg-gray-400 flex flex-col md:flex-row items-center justify-center p-8 gap-8">
       <!-- Texto Explicativo -->
       <div class="w-full md:w-1/2 flex flex-col justify-center items-start space-y-4">
         <h2 class="text-3xl font-bold">Texto Explicativo</h2>
@@ -14,23 +14,23 @@
   
       <!-- Imagem -->
       <div class="w-full md:w-1/2 flex items-center justify-center">
-        <img
-          :src="people"
-          alt="Imagem Descritiva"
-          class="max-w-full h-auto rounded-lg shadow-md"
-        />
+      
+         <!-- <img :src="banner" alt="Imagem Send" 
+           class="max-w-full h-auto rounded-lg shadow-md"
+         />          -->
+        
       </div>
     </section>
   </template>
   
   <script>
-  import people from "../../../assets/work_boxjpg";
-  
+// import banner from "@/assets/send.jpg";
+
   export default {
     name: "SectionAndBanner",
     data() {
-      return {
-        people,
+      return {  
+        // banner, 
       };
     },
   };
