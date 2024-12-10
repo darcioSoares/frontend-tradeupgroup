@@ -8,7 +8,7 @@
     props: {
       height: {
         type: String,
-        default: "4rem",
+        default: "6rem",
       },
     },
   };

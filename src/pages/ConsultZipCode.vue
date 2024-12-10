@@ -1,0 +1,73 @@
+<template>
+  <!-- <Spacer /> -->
+  <div class="min-h-screen flex items-center justify-center bg-gray-100 p-6 mt-6">
+    <div class="bg-white shadow-md rounded-lg p-6 w-full max-w-md">
+      
+      <h1 class="text-2xl font-bold text-gray-700 mb-4">Consultar CEP</h1>
+      <form @submit.prevent="buscarEndereco" class="space-y-4">
+        <div>
+          <label for="origem" class="block text-sm font-medium text-gray-600">
+            CEP 
+          </label>
+          <input
+            id="origem"
+            v-model="cepOrigem"
+            type="text"
+            placeholder="Digite o CEP de origem"
+            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 text-sm"
+            required
+          />
+        </div>
+
+        <button
+          type="submit"
+          class="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition"
+        >
+          Calcular
+        </button>
+      </form>
+      <div v-if="endereco" class="mt-4 bg-gray-100 p-4 rounded-lg">
+        <h2 class="text-lg font-medium text-gray-700 mb-2">Endereço:</h2>
+        <p><strong>Logradouro:</strong> {{ endereco.logradouro }}</p>
+        <p><strong>Bairro:</strong> {{ endereco.bairro }}</p>
+        <p><strong>Cidade:</strong> {{ endereco.localidade }}</p>
+        <p><strong>UF:</strong> {{ endereco.uf }}</p>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import axios from "axios";
+
+import Spacer from "@/components/Layouts/Space.vue";
+export default {
+  components: {
+    Spacer
+  },
+  data() {
+    return {
+      cepOrigem: "",  
+      endereco: null,
+    };
+  },
+  methods: {
+  async buscarEndereco() {
+    try {
+      const response = await axios.get(
+        `https://viacep.com.br/ws/${this.cepOrigem}/json/`
+      );
+      if (response.data.erro) {
+        console.log(response.data.erro)
+        throw new Error("CEP não encontrado.");
+      }
+      this.endereco = response.data;
+    } catch (error) {
+      console.error(error.message || error);
+      alert("Não foi possível buscar o endereço. Verifique o CEP.");
+    }
+  },
+},
+};
+</script>
+
