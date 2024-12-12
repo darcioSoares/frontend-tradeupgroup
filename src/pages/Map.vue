@@ -1,5 +1,5 @@
 <template>
-    <Spacer />
+     <div style="height:6rem;" class="w-full bg-gray-50"></div>
     <div class="flex flex-col items-center justify-center h-screen bg-gray-100 space-y-4">
       <div class="flex space-x-2">
         <input
