@@ -1,5 +1,15 @@
-# Vue 3 + Vite
+# 📦 FRONTEND Feira - VUE 3
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Bem-vindo à **Frontend tradeupgroup**, um projeto desenvolvido em **vue 3** com foco na organização, padronização e boas práticas. 
+---
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## 🚀 Link do Projeto 
+link do projeto [shields.io](https://shields.io/)
+
+## Sobre o Projeto
+
+Uma aplicação frontend desenvolvida em Vue.js que permite consultar informações de um CEP individualmente, calcular a distância entre dois CEPs e localizar um endereço no Google Maps com base no CEP informado.
+
+## Ultilizamos duas Apis a  Viacep e a maps google apis
+
+Uma aplicação frontend desenvolvida em Vue.js que permite consultar informações de um CEP individualmente, calcular a distância entre dois CEPs e localizar um endereço no Google Maps com base no CEP informado.
