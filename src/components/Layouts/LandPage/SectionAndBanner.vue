@@ -15,9 +15,10 @@
       <p class="text-lg leading-relaxed">
         Calcule o valor dos seus pedidos e nunca mais seja pego de surpresa.
       </p>
-      <button class="px-6 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700">
-        Saiba Mais
-      </button>
+
+      <router-link to="/zip-code-value" class="bg-indigo-600 text-white hover:bg-indigo-700 rounded-full font-bold py-2 px-4">
+          Saiba mais
+      </router-link>
     </div>
 
 

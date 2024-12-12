@@ -6,9 +6,9 @@
         <p class="text-lg leading-relaxed">
           Se você é ansioso e não vê a hora de sua encomenda chegar, estamos aqui para ajudar! Insira o CEP de onde seu produto está e visualize sua localização no mapa.
         </p>
-        <button class="px-6 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700">
-          Saiba Mais
-        </button>
+        <router-link to="/map" class="bg-indigo-600 text-white hover:bg-indigo-700 rounded-full font-bold py-2 px-4">
+          Saiba mais
+      </router-link>
       </div>
   
   
