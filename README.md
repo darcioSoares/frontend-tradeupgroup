@@ -13,3 +13,9 @@ Uma aplicação frontend desenvolvida em Vue.js que permite consultar informaç�
 ## Ultilizamos duas Apis a  Viacep e a maps google apis
 
 Uma aplicação frontend desenvolvida em Vue.js que permite consultar informações de um CEP individualmente, calcular a distância entre dois CEPs e localizar um endereço no Google Maps com base no CEP informado.
+
+## Orientação sobre o projeto 
+Precisa .env precisa da VITE_API_BASE_URL=http://localhost:8000 para rodar local, apontando para o backend
+
+npm install
+npm run dev 
